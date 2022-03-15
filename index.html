@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="https://www.youtube.com/embed/1mp06E8pN08?autoplay=1" width="560" height="315" frameborder="0"></iframe> -->
+    <div id="root"></div>
+   
+</body>
+<script>
+    
+    console.log(Date.now());
+    let time = 1647321661000 
+   
+    let a = setInterval(() => {
+        console.log(Date.now());
+
+        if(time < Date.now()){
+            document.getElementById("root").innerHTML = ` <video  controls height="300px" width="500px " autoplay muted>
+        <source src="./Y2Mate.is - Minty - Huree Huuhnuud ft. Erdenechimeg (Club Edit)-1mp06E8pN08-360p-1647318968839.mp4" type="Video/mp4">
+    </video>`
+        console.log('LESSGO!');
+        clearInterval(a)
+    }
+    }, 300);
+</script>
+</html>
